@@ -7,10 +7,12 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class NewWordActivity : AppCompatActivity() {
 
     private lateinit var editWordView: EditText
+
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,8 @@ class NewWordActivity : AppCompatActivity() {
             finish()
         }
     }
+
+
 
     companion object {
         const val EXTRA_REPLY = "com.example.android.wordlistsql.REPLY"
